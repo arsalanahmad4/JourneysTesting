@@ -9,16 +9,19 @@
          // init Branch
          branch.init('key_live_jAozxBAhXn9NYeOS8Vj8BefnDxdempwR'); // Change `key_live_YOUR_KEY_GOES_HERE` to match your Branch Dashboard
 
-         // Function to change content without refreshing
-         function changeContent() {
-            var pageTitle = document.querySelector('h1');
-            pageTitle.innerHTML = 'New Page Title';
-         }
+         function addState() {
+			let stateObj = { id: "100" };
+			
+			window.history.pushState(stateObj,
+					"Page", "/new.html");
+		}
       </script>
    </head>
    <body>
       <h1>This is Page 2</h1>
-      <a href="extra.html" onclick="changeContent(); return false;">Go to Extra Page</a>
+      <button onclick="addState()">
+		Add New History State
+	</button>
    </body>
 </html>
 
