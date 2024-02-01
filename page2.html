@@ -15,7 +15,9 @@
 			window.history.pushState(stateObj,
 					"Page", "extra.html");
 		 // Call Branch function again
-            branch.track('PageView');
+            window.branch.closeJourney();
+
+window.branch.track('pageview');
 		}
       </script>
    </head>
