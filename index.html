@@ -10,20 +10,23 @@
          branch.init('key_live_jAozxBAhXn9NYeOS8Vj8BefnDxdempwR'); // Change `key_live_YOUR_KEY_GOES_HERE` to match your Branch Dashboard
 
          function onButtonClick() {
-            alert('Button Clicked!');
+            // alert('Button Clicked!');
             // You can add more code here if needed
-            var event_and_custom_data = {
-   "transaction_id": "tras_Id_1232343434",
-   "currency": "USD",
-   "revenue": 180.2,
-   "shipping": 10.5,
-   "tax": 13.5,
-   "coupon": "promo-1234",
-   "affiliation": "high_fi",
-   "description": "Preferred purchase",
-   "purchase_loc": "Palo Alto",
-   "store_pickup": "unavailable"
-};
+            
+//             var event_and_custom_data = {
+//    "transaction_id": "tras_Id_1232343434",
+//    "currency": "USD",
+//    "revenue": 180.2,
+//    "shipping": 10.5,
+//    "tax": 13.5,
+//    "coupon": "promo-1234",
+//    "affiliation": "high_fi",
+//    "description": "Preferred purchase",
+//    "purchase_loc": "Palo Alto",
+//    "store_pickup": "unavailable"
+// };
+
+         }
 
 var content_items = [
 {
@@ -93,7 +96,7 @@ branch.logEvent(
     <h1>This is Page 1</h1>
     
     <!-- Create a hyperlink to page2.html -->
-    <a href="page2.html">Go to Page 2</a>
+    <a href="market://">Go to Page 2</a>
 
       <button type="button" onclick="onButtonClick()">Click Me!</button>
 
