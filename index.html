@@ -12,8 +12,11 @@
             enableExtendedJourneysAssist: true // enable or disable referring Branch link expiry for Journeys Assist
 
 };
-         branch.init('key_live_mbErCMtrzeheAWS0Xagg7hjbwDkaZ6SP'); // Change `key_live_YOUR_KEY_GOES_HERE` to match your Branch Dashboard
+         //branch.init('key_live_mbErCMtrzeheAWS0Xagg7hjbwDkaZ6SP'); // Change `key_live_YOUR_KEY_GOES_HERE` to match your Branch Dashboard
 
+         branch.init('key_live_mbErCMtrzeheAWS0Xagg7hjbwDkaZ6SP', function(err, data) {
+          console.log(err, data);
+        });
          function onButtonClick() {
             // alert('Button Clicked!');
             // You can add more code here if needed
